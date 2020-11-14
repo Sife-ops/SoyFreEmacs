@@ -32,10 +32,6 @@
 
 ;;--- PACKAGES ---;;
 
-;; avy
-(with-eval-after-load 'avy
-  (define-key global-map (kbd "M-f") 'avy-goto-char))
-
 ;; browse-kill-ring
 (with-eval-after-load 'browse-kill-ring
   (define-key global-map (kbd "M-y") 'browse-kill-ring))
