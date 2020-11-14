@@ -5,10 +5,10 @@
 
 ;;; Code:
 
-(global-prettify-symbols-mode 1)
+;; (global-prettify-symbols-mode 1)
 
 (add-hook 'emacs-lisp-mode-hook
-	  (lambda () 
+	  (lambda ()
 	    (setq prettify-symbols-alist
 		  '(
 		    ("<++>" . 12295) ; 〇
@@ -32,7 +32,7 @@
 	    ))
 
 (add-hook 'sh-mode-hook
-	  (lambda () 
+	  (lambda ()
 	    (setq prettify-symbols-alist
 		  '(
 		    ("<++>" . 12295) ; 〇
