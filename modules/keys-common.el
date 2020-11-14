@@ -43,6 +43,7 @@
 ;; company
 (with-eval-after-load 'company
   (define-key company-active-map (kbd "M-j") nil)
+  (define-key company-active-map (kbd "C-m") 'company-complete-selection)
   (define-key company-active-map (kbd "C-n") 'company-select-next)
   (define-key company-active-map (kbd "C-p") 'company-select-previous))
 
