@@ -5,6 +5,12 @@
 
 ;;; Code:
 
+(defun sife-complete-other-window ()
+  (interactive)
+  (completion-at-point)
+  (other-window 1)
+  (next-line 3))
+
 (defun sife-expand-abbrev ()
   "Expand abbrev and replace placeholder with input string."
   (interactive)

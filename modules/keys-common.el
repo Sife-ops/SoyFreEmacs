@@ -12,8 +12,8 @@
 (define-key isearch-mode-map (kbd "C-p") 'isearch-repeat-backward)
 
 ;; miscellaneous
-(define-key global-map (kbd "<C-return>") 'eval-last-sexp)
 (define-key global-map (kbd "C-x C-b") 'ibuffer)
+(define-key global-map (kbd "<C-return>") 'eval-last-sexp)
 
 ;;--- CUSTOM ---;;
 
@@ -50,6 +50,10 @@
 ;; ddskk
 (with-eval-after-load 'skk
   (define-key global-map (kbd "C-c j") 'skk-mode))
+
+;; evil
+(with-eval-after-load 'evil
+  (define-key evil-insert-state-map (kbd "C-n") 'sife-complete-other-window))
 
 ;; expand-region
 (with-eval-after-load 'expand-region
