@@ -6,6 +6,7 @@
 ;;; Code:
 
 (defun sife-complete-other-window ()
+  "Run completion-at-point and move to that window."
   (interactive)
   (completion-at-point)
   (other-window 1)
