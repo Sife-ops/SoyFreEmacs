@@ -14,7 +14,7 @@
 (set-face-background 'col-highlight (face-attribute 'region :background))
 (set-face-background 'hl-line (face-attribute 'region :background))
 
-(crosshairs-mode)
+;; (crosshairs-mode)
 
 (provide 'init-crosshairs)
 
