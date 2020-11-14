@@ -1,16 +1,25 @@
-;;; package --- Summary
+;; package --- Summary
 
 ;;; Commentary:
 ;; Custom functions...
 
 ;;; Code:
 
+(defun sife-select-window-with-buffer-name (name)
+  "Selects the window with buffer NAME"
+  (select-window
+   (car (seq-filter
+     (lambda (window)
+       (equal name (buffer-name (window-buffer window))))
+     (window-list-1 nil 0 t)))))
+
 (defun sife-complete-other-window ()
   "Run completion-at-point and move to that window."
   (interactive)
   (completion-at-point)
-  (other-window 1)
-  (next-line 3))
+  (when (get-buffer-window "*Completions*")
+    (sife-select-window-with-buffer-name "*Completions*")
+    (next-line 3)))
 
 (defun sife-expand-abbrev ()
   "Expand abbrev and replace placeholder with input string."
