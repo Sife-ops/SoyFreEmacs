@@ -17,11 +17,6 @@
     :config
     (evil-mode 1)
 
-    ;; hollow cursor style in emacs mode
-    ;; (with-eval-after-load 'sife-functions
-      ;; (setq sife-cursor-style 'hollow)
-      ;; (setq-default cursor-type sife-cursor-style))
-
     (with-eval-after-load 'org
       (use-package evil-org
 	:ensure t
