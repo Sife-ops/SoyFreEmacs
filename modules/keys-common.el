@@ -19,8 +19,8 @@
 
 (with-eval-after-load 'sife-functions
   ;; abbrev
-  (define-key global-map (kbd "C-;") 'sife-delete-next-placeholder)
-  (define-key global-map (kbd "C-'") 'sife-expand-abbrev)
+  (define-key global-map (kbd "M-k") 'sife-delete-next-placeholder)
+  (define-key global-map (kbd "M-j") 'sife-expand-abbrev)
   ;; windows
   (define-key global-map (kbd "C-x 2") nil)
   (define-key global-map (kbd "C-x 2") 'sife-split)
@@ -42,8 +42,7 @@
 
 ;; company
 (with-eval-after-load 'company
-  (define-key company-active-map (kbd "M-n") nil)
-  (define-key company-active-map (kbd "M-p") nil)
+  (define-key company-active-map (kbd "M-j") nil)
   (define-key company-active-map (kbd "C-n") 'company-select-next)
   (define-key company-active-map (kbd "C-p") 'company-select-previous))
 
