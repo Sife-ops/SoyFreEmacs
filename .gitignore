@@ -18,3 +18,7 @@ smex-items
 *~
 *#
 !.gitignore
+.cache/
+.lsp-session-v1
+eclipse.jdt.ls/
+workspace/
