@@ -48,7 +48,8 @@
   (define-key global-map (kbd "C-c j") 'skk-mode))
 
 ;; evil
-(with-eval-after-load 'evil
+;; (with-eval-after-load 'evil
+(when (and (eval-after-load 'evil t) (not (eval-after-load 'company t)))
   (define-key evil-insert-state-map (kbd "C-n") 'sife-complete-other-window))
 
 ;; expand-region
