@@ -18,6 +18,9 @@
 (put 'upcase-region 'disabled nil)
 (put 'downcase-region 'disabled nil)
 
+;; follow symlinks
+(setq vc-follow-symlinks t)
+
 ;; default browser
 (setq browse-url-browser-function 'eww-browse-url)
 
