@@ -1,7 +1,14 @@
 ;;; package --- Summary
 
 ;;; Commentary:
-;; Sife's fully modular Emacs configuration.
+;;     ____              _____         _____                          
+;;    / ___|  ___  _   _|  ___| __ ___| ____|_ __ ___   __ _  ___ ___ 
+;;    \___ \ / _ \| | | | |_ | '__/ _ \  _| | '_ ` _ \ / _` |/ __/ __|
+;;     ___) | (_) | |_| |  _|| | |  __/ |___| | | | | | (_| | (__\__ \
+;;    |____/ \___/ \__, |_|  |_|  \___|_____|_| |_| |_|\__,_|\___|___/
+;;                 |___/                                              
+;;
+;; Sife's fully modular soy-free Emacs configuration.
 ;;
 ;; To enable modules, create links from modules/ to init.d/ like this:
 ;;
