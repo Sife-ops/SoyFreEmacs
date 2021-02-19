@@ -5,12 +5,13 @@
 
 ;;; Code:
 
-(elfeed)
+;; (elfeed)
 ;; (elfeed-update)
 ;; (sife-freenode)
 ;; (sife-zeronode)
-(sife-bitlbee)
-(mu4e)
+;; (sife-bitlbee)
+;; (mu4e)
+(eww "https://www.startpage.com/en/")
 
 (provide 'startup.el)
 
