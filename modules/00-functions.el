@@ -10,7 +10,7 @@
   (interactive)
   (if (use-region-p)
       (write-region (region-beginning) (region-end)
-		    (concat (getenv "HOME") "/.local/share/clipboard") nil)))
+		    (concat (getenv "HOME") "/.local/share/clipboard/00") nil)))
 
 (defun sife-select-window-with-buffer-name (name)
   "Selects the window with buffer NAME"
