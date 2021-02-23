@@ -5,7 +5,13 @@
 
 ;;; Code:
 
-(defun SifeYankUserClipboard()
+(defun sife-kill-ring-yank-to-clipboard-file()
+  "Copies currently killed text to user clipboard"
+  (interactive)
+  (write-region (current-kill 0) nil
+		(concat (getenv "HOME") "/.local/share/clipboard/00")))
+
+(defun sife-yank-to-clipboard-file()
   "Copies highlighted region to user clipboard"
   (interactive)
   (if (use-region-p)
@@ -66,7 +72,6 @@
 					 (async-shell-command (concat "wget -P ~/Downloads/ \"" url "\""))))
     (ffap)))
     ;; (setq browse-url-browser-function sife-saved-variable)))
-
 
 (defun sife-reverse-region (beg end)
  "Reverse characters between BEG and END."
