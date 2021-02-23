@@ -11,7 +11,7 @@
 ;; (sife-zeronode)
 ;; (sife-bitlbee)
 ;; (mu4e)
-(eww "https://html.duckduckgo.com/html/")
+(eww "https://lite.duckduckgo.com/lite/")
 
 (provide 'startup.el)
 
