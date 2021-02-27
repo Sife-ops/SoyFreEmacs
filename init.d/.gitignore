@@ -1,2 +1,12 @@
-*
 !.gitignore
+!00-defaults.el
+!00-functions.el
+!20-init-dired.el
+!20-init-eww.el
+!20-init-ido.el
+!50-use-package-archives.el
+!51-use-package-evil.el
+!51-use-package-ido-vertical.el
+!51-use-package-smex.el
+!90-keymaps-common.el
+!99-startup.el
